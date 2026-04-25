@@ -31,6 +31,7 @@ body{
     margin: auto;
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+
 }
 .externo::after{
     content:'\1F517\00A0';
