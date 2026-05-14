@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1 class="logo">Travel</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Package</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#package">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+                <h2>Fuel Mind<br>Travel</h2>
+                <p>
+                    Explore lugares incríveis ao redor do mundo com experiências inesquecíveis.
+                </p>
+
+                <button id="exploreBtn">Let's Go Now</button>
+            </div>
+        </section>
+    </header>
+
+
+    <section class="services" id="services">
+        <h2>Start Your Vacation <br>with Lots of Services!</h2>
+
+        <div class="service-cards">
+
+            <div class="card">
+                <div class="icon">🚢</div>
+                <h3>Ship Cruises</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🍜</div>
+                <h3>Food Tours</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌅</div>
+                <h3>Summer Rest</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏔️</div>
+                <h3>Mountain Tours</h3>
+                <p>150 Properties</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="destination" id="destination">
+
+        <h2>Our Most Popular Destination!</h2>
+
+        <div class="destination-grid">
+
+            <div class="destination-card">
+                <img src="destination1.jpg" alt="Destination 1">
+                <h3>Paris, France</h3>
+                <p>Experience the city of lights like never before.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="destination2.jpg" alt="Destination 2">
+                <h3>Bali, Indonesia</h3>
+                <p>Relax on pristine beaches and explore vibrant culture.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="destination3.jpg" alt="Destination 3">
+                <h3>Tokyo, Japan</h3>
+                <p>Immerse yourself in a unique blend of tradition and modernity.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="package" id="package">
+
+        <h2>Our Upcoming Tour Package</h2>
+
+        <div class="package-container">
+
+            <div class="package-card">
+                <img src="package1.jpg" alt="Package 1">
+                <div class="price">$499</div>
+                <h3>London</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="package-card">
+                <img src="package2.jpg" alt="Package 2">
+                <div class="price">$499</div>
+                <h3>New York</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="package-card">
+                <img src="package3.jpg" alt="Package 3">
+                <div class="price">$499</div>
+                <h3>Dubai</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+        </div>
+
+
+.package-card p{
+    margin: 10px 0;
+}
+
+.package-card span{
+    color: #8f7cff;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 900px){
+
+    .hero-content h2{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    nav{
+        padding: 0 5%;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+}
+
+@media(max-width: 700px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero{
+        padding: 0 5%;
+    }
+
+    .hero-content h2{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .services h2,
+    .destination h2,
+    .package h2{
+        font-size: 2rem;
+    }
+
+     .services .service-card,
+     .destination .destination-card,
+     .package .package-card{
+        flex: 1 1 100%;
+    }
+}
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1 class="logo">Travel</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Package</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#package">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+                <h2>Fuel Mind<br>Travel</h2>
+                <p>
+                    Explore lugares incríveis ao redor do mundo com experiências inesquecíveis.
+                </p>
+
+                <button id="exploreBtn">Let's Go Now</button>
+            </div>
+        </section>
+    </header>
+
+
+    <section class="services" id="services">
+        <h2>Start Your Vacation <br>with Lots of Services!</h2>
+
+        <div class="service-cards">
+
+            <div class="card">
+                <div class="icon">🚢</div>
+                <h3>Ship Cruises</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🍜</div>
+                <h3>Food Tours</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌅</div>
+                <h3>Summer Rest</h3>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏔️</div>
+                <h3>Mountain Tours</h3>
+                <p>150 Properties</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="destination" id="destination">
+
+        <h2>Our Most Popular Destination!</h2>
+
+        <div class="destination-grid">
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Machu Picchu</h3>
+                    <p>PERU</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Mountain View</h3>
+                    <p>SWITZERLAND</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Golden Bridge</h3>
+                    <p>USA</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Blue Ocean</h3>
+                    <p>BRAZIL</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Nature Tour</h3>
+                    <p>CANADA</p>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="info">
+                    <h3>Old City</h3>
+                    <p>ITALY</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="package" id="package">
+
+        <h2>Our Upcoming Tour Package</h2>
+
+        <div class="package-container">
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="price">$499</div>
+                <h3>London</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="price">$499</div>
+                <h3>New York</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="">
+                <div class="price">$499</div>
+                <h3>Dubai</h3>
+                <p>4h - 5h</p>
+                <span>★★★★★</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
